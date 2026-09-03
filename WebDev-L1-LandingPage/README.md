@@ -28,10 +28,7 @@ It demonstrates foundational layout and styling skills with a clean, responsive 
 - **HTML5** — Structure  
 - **CSS3** — Styling & Layout (Flexbox/Grid)  
 
----
 
-## 🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YourUsername/OIBSIP.git
+
+
 
