@@ -1,7 +1,7 @@
 # WebDev Level 1 — Landing Page
 
 ## 👩‍💻 Intern Details
-- **Name:** [Your Full Name]
+- **Name:** Disha Ravindranatha Patil
 - **Track:** Web Development
 - **Task:** Level 1 — Landing Page
 
