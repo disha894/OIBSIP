@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Temperature Converter</title>
+
+  <!-- FontAwesome for UI Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="converter-card">
+    <div class="header">
+      <h1><i class="fa-solid fa-temperature-three-quarters"></i> TempConverter</h1>
+    </div>
+
+    <!-- Numeric Input Field -->
+    <div class="form-group">
+      <label for="tempInput">Temperature Value</label>
+      <div class="input-wrapper">
+        <i class="fa-solid fa-hashtag"></i>
+        <input 
+          type="number" 
+          id="tempInput" 
+          placeholder="Enter temperature..." 
+          step="any" 
+        />
+      </div>
+      <!-- Error output for validation / absolute zero -->
+      <div id="errorMessage" class="error-message">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <span id="errorText">Invalid input</span>
+      </div>
+    </div>
+
+    <!-- Source Unit Selection -->
+    <div class="form-group">
+      <label for="unitSelect">From Unit</label>
+      <select id="unitSelect">
+        <option value="Celsius">Celsius (°C)</option>
+        <option value="Fahrenheit">Fahrenheit (°F)</option>
+        <option value="Kelvin">Kelvin (K)</option>
+      </select>
+    </div>
+
+    <!-- Trigger Button -->
+    <button class="btn-convert" id="convertBtn">
+      <i class="fa-solid fa-calculator"></i> Convert
+    </button>
+
+    <div class="temperature-meter" aria-hidden="true"></div>
+
+    <!-- Simultaneous Results Display -->
+    <div class="results-container">
+      <div class="results-title">Converted Values:</div>
+      
+      <div class="result-card">
+        <span class="result-label"><i class="fa-solid fa-temperature-low"></i> Celsius</span>
+        <span class="result-value" id="celsiusResult">-- °C</span>
+      </div>
+
+      <div class="result-card">
+        <span class="result-label"><i class="fa-solid fa-temperature-high"></i> Fahrenheit</span>
+        <span class="result-value" id="fahrenheitResult">-- °F</span>
+      </div>
+
+      <div class="result-card">
+        <span class="result-label"><i class="fa-solid fa-atom"></i> Kelvin</span>
+        <span class="result-value" id="kelvinResult">-- K</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- External Script -->
+  <script src="first.js"></script>
+</body>
+</html>
